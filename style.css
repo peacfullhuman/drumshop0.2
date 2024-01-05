@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-color: wheat;
+    font-family: 'Fira Sans', sans-serif;
+    /* min-width: 1300px; */
+    /* margin-bottom: 100px; */
+}
+/* ЖЕЛТАЯ ПОЛОСКА СВЕРХУ */
+.head-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 148, 109);
+    height: 40px;
+    font-weight: 300;
+}
+
+.head-action span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.head-action a{
+    color: white;
+}
+/* ЖЕЛТАЯ ПОЛОСКА СВЕРХУ */
+/* ВЕРХНЕЕ МЕНЮ */
+.header{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.header img{
+    height: 50px;
+    width: 35px;
+}
+
+.header nav a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+
+    transition: all 0.5s ease;
+}
+
+.header nav a:hover{
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(174, 148, 109);
+}
+
+.header .search-box{
+    margin-left: 100px;
+    background-color: rgb(24, 24, 24);
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    transition: all .2s ease;
+}
+
+.header .search-box:hover{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .search-box i{
+    padding-right: 3px;
+    color: white;
+}
+
+.header .search-box input{
+    outline:none;
+    border: none;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    height: 25px;
+}
+
+.header a{
+    text-decoration: none;
+}
+.header a i{
+    margin-left: 25px;
+    color: white;
+    font-size: 25px;
+
+    transition: all 0.3s ease;
+}
+
+.header a i:hover{
+    color: rgb(139, 134, 134);
+}
+
+.small-menu{
+    display: none;
+}
+/* ВЕРХНЕЕ МЕНЮ */
+/* ОКНО СКИДОК */
+.container{
+    position: relative;
+    display: block;
+}
+
+.sale-zone{
+    color: white;
+    height: auto;
+    padding: 20vh 150px;
+    background-image: url(https://sun9-17.userapi.com/c824411/v824411413/97ea/-1lr9Yfh118.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.sale-info{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: default;
+    margin-bottom: 1vh;
+}
+
+.head-sale{
+    display: flex;
+    justify-content: end;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.sale-info .second-sale{
+    display: flex;
+    justify-content: start;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-sale{
+    width: 70vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding-left: 10px;
+}
+
+.btn-sale a{
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+
+    transition: all 0.5s ease;
+}
+
+.btn-sale a:hover{
+    background-color: rgb(139, 134, 134);
+}
+/* ОКНО СКИДОК */
+/* ТОВАРЫ СО СКИДКОЙ */
+.sale-offer{
+    display: flex;
+    justify-content: space-around;
+    height: 26vh;
+    background-color: white;
+    padding: 50px 300px;
+}
+
+.sale-card{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 15px;
+}
+
+.card-img{
+    background-image: url(https://sun9-58.userapi.com/impg/HL5_hVtXr7lClN6DEPTkWuEBjW1lsRBhq3CdUA/9LrtIdsBq_8.jpg?size=1810x1504&quality=95&sign=2885d9ddd3ab691b2edcd201070a5935&type=album);
+    background-size:cover;
+    min-width: 20vh;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 11px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+
+    transition: 0.5s ease;
+}
+
+.card-img a:hover{
+    background-color: rgb(107, 106, 106);
+    border: 1px solid black;
+}
+
+/* .sale-img-one{}
+
+.sale-img-two{}
+
+.sale-img-tree{}
+
+.sale-img-four{
+    background-image: url(https://ua.puma.com/media/contentmanager/content/2880x1000_5_3.jpg);
+} */
+
+.sale-name{
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.sale-price{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sale-price span{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(54, 54, 54);
+    text-decoration: 2px line-through red;
+}
+/* ТОВАРЫ СО СКИДКОЙ */
+/* НИЖНЕЕ МЕНЮ СКИДОК */
+.small-offer-sale{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vh;
+}
+
+.head-small-info{
+    color: rgb(24, 24, 24);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.second-small-info{
+    color: rgb(24, 24, 24);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-small-catalog{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.btn-small-catalog a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(24, 24, 24);
+    border-radius: 1px solid rgb(24, 24, 24);
+    padding: 15px 45px;
+
+    transition: all 0.5s ease;
+}
+
+.btn-small-catalog a:hover{
+    background-color: rgb(70, 70, 70);
+}
+/* НИЖНЕЕ МЕНЮ СКИДОК */
+/* ОКНО БАРАБАНОВ */
+.drums{
+    height: auto;
+    padding: 0 15vh;
+    background-image: url(https://www.belcantofund.com/upload/iblock/dba/dba938088e67ce1695123dbefba3bdcd.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.drums-info{
+    margin-bottom: 15px;
+}
+
+.drum-first{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.btn-drums a{
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 50px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+
+    transition: all 0.5s ease;
+}
+
+.btn-drums a:hover{
+    background-color: rgb(139, 134, 134);
+}
+/* ОКНО БАРАБАНОВ */
+/* БАРАБАН ТОВАРЫ */
+.drum-offer{
+    display: flex;
+    justify-content: space-around;
+    height: 26vh;
+    background-color: white;
+    padding: 50px 300px;
+}
+
+.drum-card{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.card-img-drum{
+    background-size:cover;
+    min-width: 20vh;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.card-img-drum .drum-next{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 11px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+
+    transition: 0.5s ease;
+}
+
+.card-img-drum .drum-next:hover{
+    background-color: rgb(107, 106, 106);
+    border: 1px solid black;
+}
+
+.drum-img-one{
+    background-image: url(https://pop-music.ru/upload/iblock/769/769226a67f51e24c51ab2ad941ff5adc.jpg);
+}
+.drum-img-two{
+    background-image: url(https://pop-music.ru/upload/medialibrary/ca8/ca89fc82c9fcd6b0f5c51292d348c35c.jpg);
+}
+
+.drum-img-three{
+    background-image: url(https://musicmall.hu/13399/vancore-ccv-4001-vibrafon-motorral-3-oktav.jpg);
+}
+
+.drum-img-four{
+    background-image: url(https://octavashop.ru/upload/shop_3/4/7/3/item_47301/small_shop_items_catalog_image47301.jpg);
+}
+
+.drum-name{
+    padding-top: 15px;
+    font-size: 15px;
+}
+/* БАРАБАН ТОВАРЫ */
+/* НИЖНИЙ УЧАСТОК */
+.buttom{
+    padding: 3vh 10vh;
+    min-height: 30vh;
+    height: auto;
+    background-color: rgb(24, 24, 24);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttom-info{
+    display: flex;
+    flex-flow: column;
+    border-right: 1px solid white;
+    padding-right: 2vh;
+}
+
+.buttom-info .logo-name{
+    font-size: 18px;
+    margin-bottom: 1vh;
+}
+
+.social-container{
+    padding-right: 5px;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-container a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.411);
+    font-size: 25px;
+    /* padding-right: 20px; */
+}
+
+.buttom-info .social-container a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.number{
+    font-size: 25px;
+    margin-bottom: 1vh;
+}
+
+.work-info{
+    margin-top: 1vh;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.work-info p span{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.columns-catalog{
+    padding: 2vh 2vh 2vh 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border-right: 1px solid white;
+}
+
+.columns-catalog a{
+    text-decoration: none;
+    color: white;
+}
+
+.columns-catalog a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+/* НИЖНИЙ УЧАСТОК */
+
+@media only screen and (width < 1280px) {
+    body{
+        width: 1240px;
+    }
+    .search-box{
+        display: none;
+    }
+    .btn-sale a{
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (width < 1025px) {
+    body{
+        width: 1000px;
+    }
+    .header nav{
+        display: none;
+    }
+
+    .small-menu{
+        display: contents;
+    }
+
+    .btn-sale a{
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (width < 890px) {
+    .sale-info p{
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+
+    .btn-sale a{
+        font-size: 10px;
+        margin-right: 5px;
+        padding: 10px 25px;
+    }
+
+    .columns-catalog{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width < 735px){
+    .sale-zone{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sale-info{
+        display: flex;
+        flex-flow: column;
+        align-items: start;
+        height: auto;
+        width: auto;
+    }
+    .sale-info .head-sale{
+        font-size: 25px;
+    }
+    .sale-info .second-sale{
+        font-size: 13px;
+    }
+    .btn-sale{
+    }
+    .btn-sale a{
+        padding: 10px 15px;
+    }
+
+    .sale-offer{
+        display: none;
+    }
+
+    .logo-name h2{
+        font-size: 15px;
+    }
+    .social-container a{
+        font-size: 18px;
+    }
+    .number{
+        font-size: 15px;
+    }
+    .work-info p{
+        font-size: 14px;
+    }
+    .work-info p span{
+        font-size: 8px;
+    }
+
+    .columns-catalog{
+        font-size: 10px;
+    }
+
+    .btn-small-catalog a{
+        font-size: 12px;
+        font-weight: 500;
+        padding: 10px 15px;
+    }
+}
+
+
+/* 
+@media only screen and (width < 415px){
+
+    body{
+        width: 414px;
+    }
+    .wrapper{
+        width: 414px;
+
+    }
+    .btn-sale{
+        display: none;
+    }
+
+    .drum-offer{
+        display: none;
+    }
+} */
+
+/* @media only screen and (width < 376px){
+    body{
+        width: 375px; */
+@media only screen and (width < 415px){
+    body{
+        width: 414px;
+    }
+    .head-action h3, .head-action h3 span{
+        font-size: 15px;
+    }
+
+    .sale-zone{
+        padding: 2vh 0;
+    }
+    
+    .sale-info .head-sale{
+        font-size: 15px;
+    }
+
+    .btn-sale{
+        width: 20vh;
+    }
+
+    .btn-sale{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-drum{
+        display: none;
+    }
+
+    .drums{
+        padding: 3vh 2vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .drums-info .drum-first{
+        font-size: 15px;
+    }
+
+    .btn-drums a{
+        font-size: 8px;
+        padding: 3px 5px;
+    }
+
+    .drum-offer{
+        display: none;
+    }
+
+    .buttom{
+        padding: 1vh;
+    }
+
+    .columns-catalog{
+        margin-left: 5px;
+        border: none;
+    }
+
+    .try{
+        height: 25vh;
+        background-color: wheat;
+    }
+}
